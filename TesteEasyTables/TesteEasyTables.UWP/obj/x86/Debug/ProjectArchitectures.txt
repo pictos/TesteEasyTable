@@ -1,0 +1,2 @@
+C:\Users\PedroJ\Documents\GitHub\TesteEasyTable\TesteEasyTables\TesteEasyTables.UWP\TesteEasyTables.UWP.csproj;x86
+C:\Users\PedroJ\Documents\GitHub\TesteEasyTable\TesteEasyTables\TesteEasyTables\TesteEasyTables.csproj;neutral

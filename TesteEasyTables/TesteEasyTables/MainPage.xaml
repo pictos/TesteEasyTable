@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:local="clr-namespace:TesteEasyTables"
+			 x:Class="TesteEasyTables.MainPage"
+             Title="Teste SQL">
+
+	<StackLayout Padding="20">
+        <Entry Text="{Binding Nome}"  Placeholder="Insira nome" />
+        <Entry Text="{Binding Idade}" Placeholder="Insira idade" />
+        
+        <Button Text="Cadastrar" Command="{Binding CadastrarCommand}"/>
+        <Button Text="Consultar" Command="{Binding GetUserCommand}"/>
+        
+        
+        <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+        
+        <ListView x:Name="ListUser" ItemsSource="{Binding Usuarios}">
+            <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell Text="{Binding Nome}"
+                           Detail="{Binding Idade}"/>
+            </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
